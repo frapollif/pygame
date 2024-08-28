@@ -1,12 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
-  },
-  "forwardPorts": [6080],
-  "portsAttributes": {
-    "6080": {
-      "label": "desktop"
+ "features": {
+    "desktop-lite": {
+        "password": "vscode",
+        "webPort": "6080",
+        "vncPort": "5901"
     }
-  }
+}
 }
